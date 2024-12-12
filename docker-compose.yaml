@@ -1,7 +1,13 @@
 services:
+  mysql:
+    build: './src/mysql/'
+    ports:
+      - '5432:5432'
   app:
     build: './src/app/'
     volumes:
       - './src/app/:/app'
     ports:
       - '8080:8080'
+    depends_on:
+      - 'mysql'
