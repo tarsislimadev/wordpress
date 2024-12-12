@@ -1,1 +1,1 @@
-FROM mysql:alpine
+FROM mysql
