@@ -1,4 +1,4 @@
-FROM php:7-alpine
+FROM composer:lts
 
 WORKDIR /app
 
